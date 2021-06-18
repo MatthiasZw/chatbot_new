@@ -28,4 +28,4 @@ RUN mv intents.json model /app/v3
 RUN useradd appuser && chown -R appuser /app
 USER appuser
 
-CMD ["flask", "run"]
+CMD ["python", "chatbot-webgu.py"]

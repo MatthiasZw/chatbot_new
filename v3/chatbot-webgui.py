@@ -27,3 +27,7 @@ def index():
     p = Path(__file__).parent / 'templates'
     template = str(p.joinpath("/chatbot.html"))
     return render_template(template, chatbot_label=chatbot_label)
+
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
