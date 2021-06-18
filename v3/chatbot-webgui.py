@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import logging
 from flask import Flask, render_template, request, flash
 from chatbot_ai import chatbot_ai
 from pathlib import Path
-
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'Pa$$w0rd'
@@ -12,6 +12,7 @@ app.config['SECRET_KEY'] = 'Pa$$w0rd'
 
 @app.route('/', methods=('GET', 'POST'))
 def index():
+    logging.basicConfig(filename="webgui-dev.log", level=logging.DEBUG)
     chatbot_label = "Hallo, worüber wollen Sie sprechen?"
 
     # Logik

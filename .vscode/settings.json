@@ -1,4 +1,9 @@
 {
     "python.pythonPath": "/home/lokaleradmin/Dokumente/Python/chatbot_new/.venv/bin/python",
-    "python.analysis.extraPaths": ["v2", "v3"]
+    "python.analysis.extraPaths": [
+        "v2",
+        "v3"
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true
 }
